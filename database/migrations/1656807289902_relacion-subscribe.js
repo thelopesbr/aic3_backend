@@ -14,12 +14,12 @@ exports.up = pgm => {
             references: '"player"',
             onDelete: 'restrict'
           },
-        tournament:{
-            type: 'integer',
-            notNull: true,
-            references: '"player"',
-            onDelete: 'restrict'
-          },
+        // tournament:{
+        //     type: 'integer',
+        //     notNull: true,
+        //     references: '"player"',
+        //     onDelete: 'restrict'
+        //   },
     })
 };
 

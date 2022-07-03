@@ -8,7 +8,7 @@ exports.up = pgm => {
         name: {type: 'varchar(50)', notNull: true},
         email: {type: 'varchar(20)', notNull: true},
         born: {type: 'date', notNull: true},
-        shirt: {type: 'varchar(10)', notNull: true},
+        shirt: {type: 'varchar(10)', notNull: false},
         city: {type: 'varchar(50)', notNull: true},
         phone: {type: 'varchar(20)', notNull: true},
         category: {type: 'varchar(20)', notNull: true},

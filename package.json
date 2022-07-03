@@ -21,6 +21,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "shelljs": "^0.8.5"
   }
 }
