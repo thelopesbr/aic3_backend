@@ -5,9 +5,12 @@ const app = express();
 
 // ROTAS
 const indexRoute = require('./routes/indexRoute');
+const initRoute = require('./routes/initRoute');
 const subscribeRoute = require('./routes/subscribeRoute');
 
 app.use(express.json())
+
+app.use('/init', initRoute);
 
 app.use('/', indexRoute);
 app.use('/subscribe', subscribeRoute);

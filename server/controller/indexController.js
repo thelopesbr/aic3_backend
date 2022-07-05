@@ -7,6 +7,6 @@ exports.get  = async function ( req, res, next ) {
     if (response.type === 'Success'){
         return  res.status(response.status).json(response.data)
     } else{
-        return  res.status(response.status).send(response)
+        return  res.status(response.status).redirect('/init'); //.send(response)
     }
 }
