@@ -14,12 +14,6 @@ exports.up = pgm => {
             references: '"player"',
             onDelete: 'restrict'
           },
-        // tournament:{
-        //     type: 'integer',
-        //     notNull: true,
-        //     references: '"player"',
-        //     onDelete: 'restrict'
-        //   },
     })
 };
 
@@ -28,7 +22,3 @@ exports.down = pgm => {
     pgm.dropColumns('subscribe','playerTwo', {ifExists: true, cascade: true} );
     pgm.dropColumns('subscribe','playerOne', {ifExists: true, cascade: true} );
 };
-
-//playerOne: {type: 'varchar(50)', notNull: true},
-        //playerTwo: {type: 'varchar(20)', notNull: true},
-        //tournament: {type: 'varchar()'},

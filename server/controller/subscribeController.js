@@ -10,8 +10,6 @@ exports.getById  = async function ( req, res, next ) {
         return  res.status(response.status).send(response);
     }
 }
-//daqui pra baixo eu não me responsabilizo nao 
-
 exports.post  = async function ( req, res, next ) {
     
     const subscribe = {
