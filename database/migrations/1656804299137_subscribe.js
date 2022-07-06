@@ -7,6 +7,7 @@ exports.up = pgm => {
         id: {type: 'serial', notNull: true, primaryKey: true},
         name: {type: 'varchar(50)', notNull: true},
         email: {type: 'varchar(20)', notNull: true},
+        password: {type: 'varchar(50)', notNull: true},
         born: {type: 'date', notNull: true},
         shirt: {type: 'varchar(10)', notNull: false},
         city: {type: 'varchar(50)', notNull: true},

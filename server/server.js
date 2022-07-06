@@ -4,12 +4,12 @@ const express = require('express');
 const app = express();
 
 // ROTAS
-const indexRoute = require('./routes/indexRoute');
+const apiRoute = require('./routes/apiRoute');
 const subscribeRoute = require('./routes/subscribeRoute');
 
 app.use(express.json())
 
-app.use('/', indexRoute);
+app.use('/api', apiRoute);
 app.use('/subscribe', subscribeRoute);
 
 app.listen(process.env.PORT, () => {
